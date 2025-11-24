@@ -1,0 +1,145 @@
+📑 Project Report
+
+File Management App (Python)
+
+
+---
+
+1️⃣ Introduction
+
+The File Management App is a Python-based program that enables users to manage files through a command-line interface. It demonstrates the use of file handling, user input, error handling, and modular programming with functions in Python.
+
+
+---
+
+2️⃣ Objectives
+
+To design a basic yet practical file management system.
+
+To practice Python file-handling techniques.
+
+To implement exception handling for safe operations.
+
+To understand modular programming using functions.
+
+
+
+---
+
+3️⃣ Methodology
+
+The project is built using Python’s built-in functions and the os module. It follows the structured approach of modular programming, where each feature is wrapped inside a separate function.
+
+Functions used:
+
+Function Name	Purpose
+
+create_file()	Creates a new file
+view_all_files()	Lists all files in current directory
+delete_file()	Deletes a file
+read_file()	Displays file content
+edit_file()	Adds content to an existing file
+main()	Controls program flow
+
+
+
+---
+
+4️⃣ Technologies Used
+
+Technology	Purpose
+
+Python 3.x	Programming language
+OS Module	Directory & file handling
+File Handling Functions	read, write, append
+
+
+
+---
+
+5️⃣ Features & Working
+
+▶ Create File
+
+Uses open(filename, "x") to create a file.
+
+If file exists, handles FileExistsError.
+
+
+▶ View All Files
+
+Uses os.listdir() to display files.
+
+
+▶ Delete File
+
+Uses os.remove(filename) to delete files.
+
+
+▶ Read File
+
+Opens file in read ("r") mode.
+
+Displays file content using read().
+
+
+▶ Edit File
+
+Opens file in append ("a") mode.
+
+Adds new text to the file.
+
+
+▶ Exit
+
+Terminates program loop.
+
+
+
+---
+
+6️⃣ Exception Handling
+
+Used blocks like:
+
+try:
+    ...
+except FileNotFoundError:
+    ...
+except FileExistsError:
+    ...
+except Exception as e:
+    ...
+
+This ensures that the program does not crash even if invalid inputs are given.
+
+
+---
+
+7️⃣ Output (Sample Run Screenshot Description)
+
+When user enters "1", application asks for filename and creates it.
+
+When "3", user can delete the file.
+
+When "4", file content is displayed.
+
+
+
+---
+
+8️⃣ Conclusion
+
+The File Management App successfully performs basic file operations and demonstrates strong understanding of Python concepts like file handling, loops, modular programming, and exception handling.
+
+This project is useful for beginners and can be further extended into GUI-based apps using Tkinter or other frameworks.
+
+
+---
+
+9️⃣ Future Enhancements
+
+🔹 Add a GUI using Tkinter
+🔹 Add options to rename or copy files
+🔹 Allow selecting custom folders
+🔹 Build a desktop application
